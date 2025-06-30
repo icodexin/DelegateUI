@@ -167,6 +167,11 @@ Item {
         __listView.model = [];
     }
 
+    function setInactive() {
+        __listView.currentIndex = -1;
+        __private.selectedItem = null;
+    }
+
     component MenuButton: DelButton {
         id: __menuButtonImpl
 
